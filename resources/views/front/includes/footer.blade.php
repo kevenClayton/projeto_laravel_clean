@@ -16,12 +16,11 @@
           <div class="cs-widget cs-widget-light">
             <h4 class="cs-widget-title">Company</h4>
             <ul>
-              <li><a class="cs-widget-link" href="#">Home</a></li>
-              <li><a class="cs-widget-link" href="#">About</a></li>
-              <li><a class="cs-widget-link" href="#">Contact</a></li>
-              <li><a class="cs-widget-link" href="#">FAQ</a></li>
-              <li><a class="cs-widget-link" href="#">Book Now</a></li>
-              <li><a class="cs-widget-link" href="#">Princing</a></li>
+              <li><a class="cs-widget-link" href="{{ route('home') }}">Home</a></li>
+              <li><a class="cs-widget-link" href="{{ route('about') }}">About</a></li>
+              <li><a class="cs-widget-link" href="{{ route('contact') }}">Contact</a></li>
+              <li><a class="cs-widget-link" href="{{ route('faq') }}">FAQ</a></li>
+              <li><a class="cs-widget-link" href="{{ route('book_now') }}">Book Now</a></li>
             </ul>
           </div>
         </div>
@@ -29,12 +28,12 @@
           <div class="cs-widget cs-widget-light">
             <h4 class="cs-widget-title">Our Services</h4>
             <ul>
-              <li><a class="cs-widget-link" href="#">General Cleaning</a></li>
-              <li><a class="cs-widget-link" href="#">Deep Cleaning</a></li>
-              <li><a class="cs-widget-link" href="#">Office Cleaning</a></li>
-              <li><a class="cs-widget-link" href="#">Hoarding Cleanup</a></li>
-              <li><a class="cs-widget-link" href="#">Airbnb Cleaning</a></li>
-              <li><a class="cs-widget-link" href="#">Move Out/In Cleaning</a></li>
+              <li><a class="cs-widget-link" href="{{ route('book_now') }}">General Cleaning</a></li>
+              <li><a class="cs-widget-link" href="{{ route('book_now') }}">Deep Cleaning</a></li>
+              <li><a class="cs-widget-link" href="{{ route('book_now') }}">Office Cleaning</a></li>
+              <li><a class="cs-widget-link" href="{{ route('book_now') }}">Hoarding Cleanup</a></li>
+              <li><a class="cs-widget-link" href="{{ route('book_now') }}">Airbnb Cleaning</a></li>
+              <li><a class="cs-widget-link" href="{{ route('book_now') }}">Move Out/In Cleaning</a></li>
             </ul>
           </div>
         </div>
