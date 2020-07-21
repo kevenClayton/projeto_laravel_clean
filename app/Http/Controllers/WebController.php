@@ -14,6 +14,14 @@ class WebController extends Controller
     {
         return view('front.book-now');
     }
+    public function contact()
+    {
+        return view('front.contact');
+    }
+    public function about()
+    {
+        return view('front.about');
+    }
 }
 
 

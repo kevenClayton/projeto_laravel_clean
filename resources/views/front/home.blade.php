@@ -85,8 +85,8 @@
         <h2 class="mb-3">You can include extra services in your cleaning
         </h2>
         <p class="text-muted mb-4 pb-2">Clean your window, closet, move your cell phone, do nothing, leave everything with us.</p>
-        <a class="btn btn-primary" href="#"><i class="fe-clock"></i> Schedule</a>
-        <a class="btn btn-outline-primary"  href="#">Hire extra service</a>
+        <a class="btn btn-primary" href="{{ route('book_now') }}"><i class="fe-clock"></i> Schedule</a>
+        <a class="btn btn-outline-primary"  href="{{ route('book_now') }}">Hire extra service</a>
       </div>
       <div class="col-lg-8 col-md-7 bg-position-center bg-no-repeat" style="background-image: url(img/demo/business-consulting/services/bg-shape.svg);">
         <div class="mx-auto" style="max-width: 610px;">

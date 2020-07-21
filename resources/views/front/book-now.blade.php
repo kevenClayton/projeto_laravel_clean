@@ -342,53 +342,15 @@
 
         <div class="col-lg-4 cs-sidebar bg-secondary pt-5 pl-lg-4 pb-md-2">
           <div class="pl-lg-4 mb-3 pb-5">
-            <h2 class="h4 pb-3">Your cart</h2>
-            <div class="media align-items-center mb-4"><a class="d-block" href="shop-single.html"><img class="rounded" width="60" src="img/demo/shop-homepage/thumbnails/05.jpg" alt="Product"/></a>
-              <div class="media-body pl-2 ml-1">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="mr-3">
-                    <h4 class="nav-heading font-size-md mb-1"><a class="font-weight-medium" href="shop-single.html">Smart Watch Series 5</a></h4>
-                    <div class="d-flex align-items-center font-size-sm"><span class="mr-2">$364.99</span><span class="mr-2">x</span>
-                      <input class="form-control form-control-sm bg-image-0 px-2" type="number" style="max-width: 3.5rem;" value="1">
-                    </div>
-                  </div>
-                  <div class="pl-3 border-left"><a class="d-block text-danger text-decoration-none font-size-xl" href="#" data-toggle="tooltip" title="Remove"><i class="fe-x-circle"></i></a></div>
-                </div>
-              </div>
-            </div>
-            <div class="media align-items-center mb-4"><a class="d-block" href="shop-single.html"><img class="rounded" width="60" src="img/demo/shop-homepage/thumbnails/02.jpg" alt="Product"/></a>
-              <div class="media-body pl-2 ml-1">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="mr-3">
-                    <h4 class="nav-heading font-size-md mb-1"><a class="font-weight-medium" href="shop-single.html">Running Sneakers, Collection</a></h4>
-                    <div class="d-flex align-items-center font-size-sm"><span class="mr-2">$145.00</span><span class="mr-2">x</span>
-                      <input class="form-control form-control-sm bg-image-0 px-2" type="number" style="max-width: 3.5rem;" value="1">
-                    </div>
-                  </div>
-                  <div class="pl-3 border-left"><a class="d-block text-danger text-decoration-none font-size-xl" href="#" data-toggle="tooltip" title="Remove"><i class="fe-x-circle"></i></a></div>
-                </div>
-              </div>
-            </div>
-            <div class="media align-items-center mb-4"><a class="d-block" href="shop-single.html"><img class="rounded" width="60" src="img/demo/shop-homepage/thumbnails/06.jpg" alt="Product"/></a>
-              <div class="media-body pl-2 ml-1">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="mr-3">
-                    <h4 class="nav-heading font-size-md mb-1"><a class="font-weight-medium" href="shop-single.html">Wireless Bluethoothe Headset</a></h4>
-                    <div class="d-flex align-items-center font-size-sm"><span class="mr-2">$258.00</span><span class="mr-2">x</span>
-                      <input class="form-control form-control-sm bg-image-0 px-2" type="number" style="max-width: 3.5rem;" value="1">
-                    </div>
-                  </div>
-                  <div class="pl-3 border-left"><a class="d-block text-danger text-decoration-none font-size-xl" href="#" data-toggle="tooltip" title="Remove"><i class="fe-x-circle"></i></a></div>
-                </div>
-              </div>
-            </div>
+            <h2 class="h4 pb-3">Your Service</h2>
+
             <hr class="mb-4">
             <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Subtotal:</span><span class="text-nav">$776.99</span></div>
             <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Tax:</span><span class="text-nav">&mdash;</span></div>
             <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Shipping:</span><span class="text-nav">$12.35</span></div>
             <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Total:</span><span class="h6 mb-0">$789.34</span></div>
             <div class="accordion accordion-alt pt-4 mb-grid-gutter" id="payment-methods">
-              <div class="card border-0 box-shadow card-active">
+              {{-- <div class="card border-0 box-shadow card-active">
                 <div class="card-header p-3">
                   <div class="p-1">
                     <div class="custom-control custom-radio" data-toggle="collapse" data-target="#credit-card">
@@ -416,8 +378,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="card border-0 box-shadow">
+              </div> --}}
+              <div class="card border-0 box-shadow  card-active">
                 <div class="card-header p-3">
                   <div class="p-1">
                     <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#paypal">
@@ -427,7 +389,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="collapse" id="paypal" data-parent="#payment-methods">
+                <div class="collapse show" id="paypal" data-parent="#payment-methods">
                   <div class="card-body">
                     <p class="font-size-ms">By clicking on the button below you will be redirected to your PayPal account to complete the payment.</p><a class="d-inline-block" href="#"><img class="d-block" width="200" src="img/shop/paypal-button.png" alt="PayPal"/></a>
                   </div>

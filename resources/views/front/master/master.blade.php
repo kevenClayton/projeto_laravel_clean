@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- Mirrored from demo.createx.studio/around/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jun 2020 02:36:47 GMT -->
 <head>
     <meta charset="utf-8">
     <title>Rio Cleaning Service | Your clean house is practica</title>
@@ -12,9 +11,9 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#766df4">
@@ -107,8 +106,11 @@
     <link rel="stylesheet" media="screen" href="css/theme.min.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
     <!-- Google Tag Manager-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
 
   </head>
+
   @include('front.includes.header')
   <!-- Body-->
   <body>

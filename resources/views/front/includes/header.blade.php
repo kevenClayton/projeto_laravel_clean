@@ -23,9 +23,9 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Book Now</a>
+            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="{{ route('book_now') }}" data-toggle="dropdown">Book Now</a>
               <div class="dropdown-menu">
-                <a class="dropdown-column dropdown-column-img bg-secondary" href="#" style="background-image: url(img/demo/menu-banner.jpg);"></a>
+                <a class="dropdown-column dropdown-column-img bg-secondary" href="{{ route('book_now') }}" style="background-image: url(img/demo/menu-banner.jpg);"></a>
                 <div class="dropdown-column">
                     <span style="font-weight: bold;">Cleaning for:</span>
                     <a class="dropdown-item" href="{{ route('book_now') }}">House</a>
@@ -50,15 +50,15 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#">Pricing</a>
+            {{-- <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#">Pricing</a> --}}
             </li>
-            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
+            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="{{ route('about') }}" data-toggle="dropdown">About</a>
 
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Contact</a>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{ route('contact') }}" data-toggle="dropdown">Contact</a>
 
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">FAQ</a>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">FAQ</a>
 
             </li>
             <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Docs / UI Kit</a>

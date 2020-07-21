@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WebController@home')->name('home');
 Route::get('/book-now', 'WebController@book_now')->name('book_now');
+Route::get('/about', 'WebController@about')->name('about');
+Route::get('/contact', 'WebController@contact')->name('contact');
 
 
 
