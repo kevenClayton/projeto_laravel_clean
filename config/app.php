@@ -12,7 +12,13 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
+    // Redes Socials
+    'instagram' => 'https://www.instagram.com/riocleaningorlando/',
+    'facebook' => 'https://www.facebook.com/riocleaningorlando/',
+    'twitter' => '',
+    'tiktok' => 'https://www.tiktok.com/@riocleaning',
+    'linkedin' => '',
+    //FIM  Redes Socials
     'name' => env('APP_NAME', 'Rio Cleaning Service'),
 
     /*

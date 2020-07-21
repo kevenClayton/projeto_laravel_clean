@@ -1,6 +1,6 @@
 :root   {
     --cor-primaria:#45b3d4 !important;
-    --cor-secundaria: #4ea5db ;
+    --cor-secundaria: #37bbcf ;
     --cor-complementar: darkgray ;
 }
 .navbar-expand-lg.navbar-dark .navbar-nav .dropdown-menu .dropdown-item:hover{
@@ -289,7 +289,7 @@ select.list-dt:focus {
     text-decoration: none;
     background-color: var(--cor-primaria);
     border-radius: 0.5rem;
-  
+
 }
 .extra-item a:hover span{
     color: white !important;

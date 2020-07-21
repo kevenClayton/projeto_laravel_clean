@@ -6,7 +6,8 @@
             <img src="img/logo/logo-footer-alt.png" alt="Around"/>
           </a>
 
-          <p class="font-size-sm text-light opacity-60  pb-sm-3">Rio Cleaning Service is a service company, we work with quality and customer satisfaction in mind. We have extensive experience in cleaning, hire us and take the time to rest while we work hard.
+          <p class="font-size-sm text-light opacity-60  pb-sm-3">
+              Rio Cleaning Service is a service company, we work with quality and customer satisfaction in mind. We have extensive experience in cleaning, hire us and take the time to rest while we work hard.
           </p>
 
 
@@ -55,10 +56,10 @@
             <a class="social-btn sb-outline sb-twitter sb-light sb-lg mr-2 mb-2" href="#">
               <i class="fe-twitter"></i>
             </a>
-            <a class="social-btn sb-outline sb-instagram sb-light sb-lg mr-2 mb-2" href="#">
+            <a class="social-btn sb-outline sb-instagram sb-light sb-lg mr-2 mb-2" href="{{ config('app.instagram') }}">
               <i class="fe-instagram"></i>
             </a>
-            <a class="social-btn sb-outline sb-google sb-light sb-lg mr-2 mb-2" href="#">
+            <a class="social-btn sb-outline sb-google sb-light sb-lg mr-2 mb-2" href="{{ config('app.tiktok') }}">
               <i class="fe-google"></i>
             </a>
           </div>

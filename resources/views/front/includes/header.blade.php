@@ -4,13 +4,13 @@
           <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="{{ route('home') }}">
-            <img class="navbar-floating-logo d-none d-lg-block" width="153" src="img/logo/logo-footer-alt.png" alt="Around"/>
+            <img class="navbar-floating-logo d-none d-lg-block" width="153" src="img/logo/logo-footer-alt.png" alt="Logo {{ config('app.name') }}"/>
             <img class="navbar-stuck-logo" width="153" src="img/logo/logo-dark.png" alt="Around"/>
             <img class="d-lg-none" width="58" src="img/logo/logo-footer-alt.png" alt="Around"/>
       </a>
       <div class="d-flex align-items-center order-lg-3 ml-lg-auto">
         <a style="background: none;border-color: white;box-shadow: none;" class="btn btn-primary" href="{{ route('book_now') }}" rel="noopener">
-        <i class="fe-arrow-right-circle"></i> Hire Cleaning
+        <i class="fe-arrow-right-circle"></i> WHY HIRE US
         </a>
       </div>
       <div class="cs-offcanvas-collapse order-lg-2" id="primaryMenu">
@@ -21,7 +21,7 @@
         <div class="cs-offcanvas-body">
           <!-- Menu-->
           <ul class="navbar-nav">
-            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#">Home</a>
+            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="{{ route('home') }}">Home</a>
             </li>
             <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="{{ route('book_now') }}" data-toggle="dropdown">Book Now</a>
               <div class="dropdown-menu">
@@ -46,22 +46,21 @@
                     <a class="dropdown-item" href="{{ route('book_now') }}">Inside the Oven</a>
                     <a class="dropdown-item" href="{{ route('book_now') }}">Deep Cleaning</a>
                     <a class="dropdown-item" href="{{ route('book_now') }}">Load of Laundry</a>
-                    <!-- <a class="dropdown-item" href="#">Rent A Vacuum</a>                         -->
                 </div>
               </div>
             </li>
             {{-- <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#">Pricing</a> --}}
             </li>
-            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="{{ route('about') }}" data-toggle="dropdown">About</a>
-
+            <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="{{ route('about') }}" data-toggle="dropdown">About</a>
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{{ route('contact') }}" data-toggle="dropdown">Contact</a>
-
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{{ route('contact') }}" data-toggle="dropdown">Contact</a>
             </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">FAQ</a>
-
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{{ route('faq') }}" data-toggle="dropdown">FAQ</a>
             </li>
-            <!-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Docs / UI Kit</a>
+            {{-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Docs / UI Kit</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="docs/dev-setup.html">
                     <div class="d-flex align-items-center">
@@ -81,7 +80,7 @@
                       <div class="pl-3"><span class="d-block text-heading">Support</span><small class="d-block text-muted">contact@createx.studio</small></div>
                     </div></a></li>
               </ul>
-            </li> -->
+            </li> --}}
           </ul>
         </div>
       </div>

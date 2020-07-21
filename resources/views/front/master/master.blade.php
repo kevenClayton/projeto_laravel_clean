@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Rio Cleaning Service | Your clean house is practica</title>
+    <title>Rio Cleaning Service | {{ $title }}</title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="Rio Cleaning">
     <meta name="keywords" content="Rio Cleaning">
@@ -215,6 +215,7 @@
     <script src="vendor/parallax-js/dist/parallax.min.js"></script>
     <!-- Main theme script-->
     <script src="js/theme.min.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
   </body>
 
 <!-- Mirrored from demo.createx.studio/around/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jun 2020 02:37:47 GMT -->
