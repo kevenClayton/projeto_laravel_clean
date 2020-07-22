@@ -5,8 +5,8 @@
       </button>
       <a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="{{ route('home') }}">
             <img class="navbar-floating-logo d-none d-lg-block" width="153" src="img/logo/logo-footer-alt.png" alt="Logo {{ config('app.name') }}"/>
-            <img class="navbar-stuck-logo" width="153" src="img/logo/logo-dark.png" alt="Around"/>
-            <img class="d-lg-none" width="58" src="img/logo/logo-footer-alt.png" alt="Around"/>
+            <img class="navbar-stuck-logo" width="153" src="img/logo/logo-dark.png" alt="Logo {{ config('app.name') }}"/>
+            <img class="d-lg-none" width="58" src="img/logo/logo-footer-alt.png" alt="Logo {{ config('app.name') }}"/>
       </a>
       <div class="d-flex align-items-center order-lg-3 ml-lg-auto">
         <a style="background: none;border-color: white;box-shadow: none;" class="btn btn-primary" href="{{ route('book_now') }}" rel="noopener">

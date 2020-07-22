@@ -40,27 +40,35 @@
         <div class="col-lg-3 col-md-3 col-sm-4 mb-4">
           <div class="cs-widget cs-widget-light">
             <h4 class="cs-widget-title">Contact</h4>
-            <a class="d-block mb-3 text-white opacity-60" href="tel:9803371144" >
-               <i class="fe-smartphone"></i> 980 337 1144
+            <a class="d-block mb-3 text-white opacity-60" href="tel:{{ config('app.celular_script2') }}" >
+               <i class="fe-smartphone"></i> {{ config('app.celular2') }}
             </a>
-            <a class="d-block mb-3 text-white opacity-60" href="tel:8434469274" >
-               <i class="fe-smartphone"></i> 843 446 9274
+            <a class="d-block mb-3 text-white opacity-60" href="tel:{{ config('app.celular_script') }}" >
+               <i class="fe-smartphone"></i> {{ config('app.celular') }}
             </a>
-            <a class="d-block mb-3 text-white opacity-60" href="mailto:contact@theriocleaning.com" >
-               <i class="fe-mail"></i> contact@theriocleaning.com
+            <a class="d-block mb-3 text-white opacity-60" href="mailto:{{ config('app.email') }}" >
+               <i class="fe-mail"></i> {{ config('app.email') }}
             </a>
-            <a class="social-btn sb-outline sb-facebook sb-light sb-lg mr-2 mb-2" href="#">
+            @if(!empty(config('app.facebook')))
+            <a class="social-btn sb-outline sb-facebook sb-light sb-lg mr-2 mb-2" href="{{ config('app.facebook') }}">
               <i class="fe-facebook"></i>
             </a>
-            <a class="social-btn sb-outline sb-twitter sb-light sb-lg mr-2 mb-2" href="#">
+            @endif
+            @if(!empty(config('app.twitter')))
+            <a class="social-btn sb-outline sb-twitter sb-light sb-lg mr-2 mb-2" href="{{ config('app.twitter') }}">
               <i class="fe-twitter"></i>
             </a>
+            @endif
+            @if(!empty(config('app.instagram')))
             <a class="social-btn sb-outline sb-instagram sb-light sb-lg mr-2 mb-2" href="{{ config('app.instagram') }}">
               <i class="fe-instagram"></i>
             </a>
-            <a class="social-btn sb-outline sb-google sb-light sb-lg mr-2 mb-2" href="{{ config('app.tiktok') }}">
+            @endif
+            @if(!empty(config('app.tiktok')))
+            <a class="social-btn sb-outline sb-google sb-light sb-lg mr-2 mb-2" href="{{ route('tiktok') }}">
               <i class="fe-google"></i>
             </a>
+            @endif
           </div>
         </div>
       </div>

@@ -2,7 +2,80 @@
 
 @section('content')
 
-@include('front.includes.banner-principal-home')
+@include('front.includes.banner-principal.banner-principal-2')
+<section class="container py-5 py-md-6 py-lg-7" style="margin-top: 200px;">
+    <div class="text-center mb-5 pt-3 pt-lg-4">
+      <h2 class="h1">Take advantage of  <span class='bg-faded-primary rounded text-primary px-3 py-2'>Our Services</span></h2>
+    </div>
+    <div class="row pt-3 pt-lg-4">
+      <div class="col-md-6">
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">General Cleaning</h3>
+            <p class="font-size-md mb-0">We do general cleaning in your home, apartment, office and warehouse.</p>
+          </div>
+        </div>
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Deep Cleaning</h3>
+            <p class="font-size-md mb-0">It has that difficulty to perform its cleaning, we do the necessary deep cleaning so that it is clean and pleasant.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Move Out/In Cleaning</h3>
+            <p class="font-size-md mb-0">You need to move something for cleaning to be carried out, count on us.</p>
+          </div>
+        </div>
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Post Construction Cleaning</h3>
+            <p class="font-size-md mb-0">Are you with that dirt after finishing the work? We do all the cleaning for you!
+            </p>
+          </div>
+        </div>
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Airbnb Cleaning</h3>
+            <p class="font-size-md mb-0">House and apartment cleaning rented by airbnb.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Party Cleaning</h3>
+            <p class="font-size-md mb-0">After that perfect party, there's always that big mess, short while we clean for you.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Office Cleaning</h3>
+            <p class="font-size-md mb-0">We clean and organize your office.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Hoarding Cleanup</h3>
+            <p class="font-size-md mb-0">You have accumulated things, and you need to clean and remove them, don't worry, we'll take them out for you.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+          <div class="pl-3">
+            <h3 class="h5">Coronavirus Cleaning & Desinfecting Services</h3>
+            <p class="font-size-md mb-0">We disinfected environments to prevent the spread of Coronavirus, cleaning with specific products for your safety and that of your family.
+            </p>
+          </div>
+        </div>
+        <a href="#"><h3 class="h5">...and much more</h3></a>
+      </div>
+    </div>
+  </section>
   <!-- Demos-->
   <section class="container py-5 py-md-6 py-lg-7 my-3 mt-5">
     <div class="row align-items-center justify-content-center">
@@ -303,7 +376,7 @@ Keep in mind that the first visit will be charged a deep cleaning.  Once the dee
           </p>
           <div class="d-flex align-items-center justify-content-center justify-content-md-start">
             <a class="btn btn-primary mr-2" href="#"><i class="fe-clock"></i> Book Now</a>
-            <a class="btn btn-outline-primary"  href="#">Whatsapp</a>
+            {{-- <a class="btn btn-outline-primary"  href="#">Call</a> --}}
 
           </div>
         </div>
@@ -311,77 +384,5 @@ Keep in mind that the first visit will be charged a deep cleaning.  Once the dee
     </div>
   </section>
   <!-- Features-->
-  <section class="container py-5 py-md-6 py-lg-7">
-    <div class="text-center mb-5 pt-3 pt-lg-4">
-      <h2 class="h1">Take advantage of  <span class='bg-faded-primary rounded text-primary px-3 py-2'>Our Services</span></h2>
-    </div>
-    <div class="row pt-3 pt-lg-4">
-      <div class="col-md-6">
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">General Cleaning</h3>
-            <p class="font-size-md mb-0">We do general cleaning in your home, apartment, office and warehouse.</p>
-          </div>
-        </div>
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Deep Cleaning</h3>
-            <p class="font-size-md mb-0">It has that difficulty to perform its cleaning, we do the necessary deep cleaning so that it is clean and pleasant.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Move Out/In Cleaning</h3>
-            <p class="font-size-md mb-0">You need to move something for cleaning to be carried out, count on us.</p>
-          </div>
-        </div>
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Post Construction Cleaning</h3>
-            <p class="font-size-md mb-0">Are you with that dirt after finishing the work? We do all the cleaning for you!
-            </p>
-          </div>
-        </div>
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Airbnb Cleaning</h3>
-            <p class="font-size-md mb-0">House and apartment cleaning rented by airbnb.</p>
-          </div>
-        </div>
 
-      </div>
-      <div class="col-md-6">
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Party Cleaning</h3>
-            <p class="font-size-md mb-0">After that perfect party, there's always that big mess, short while we clean for you.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Office Cleaning</h3>
-            <p class="font-size-md mb-0">We clean and organize your office.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Hoarding Cleanup</h3>
-            <p class="font-size-md mb-0">You have accumulated things, and you need to clean and remove them, don't worry, we'll take them out for you.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
-          <div class="pl-3">
-            <h3 class="h5">Coronavirus Cleaning & Desinfecting Services</h3>
-            <p class="font-size-md mb-0">We disinfected environments to prevent the spread of Coronavirus, cleaning with specific products for your safety and that of your family.
-            </p>
-          </div>
-        </div>
-        <a href="#"><h3 class="h5">...and much more</h3></a>
-      </div>
-    </div>
-  </section>
 @endsection

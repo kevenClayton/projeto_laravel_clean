@@ -1,3 +1,4 @@
+
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -37348,3 +37349,11 @@ module.exports = __webpack_require__(/*! E:\laragon\www\app-laravel\resources\sa
 /***/ })
 
 /******/ });
+
+//book-now
+$('.extra-item').click(function(){
+    $('.extra-item').removeClass('active');
+    $(this).addClass('active');
+    // let codigoItem = $(this).data('codigo');
+    // valores(codigoItem);
+});

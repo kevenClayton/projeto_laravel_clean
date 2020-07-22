@@ -12,6 +12,9 @@ return [
     | any other location as required by the application or its packages.
     |
     */
+    //Nome da aplicação
+    'name' => env('APP_NAME', 'Rio Cleaning Service'),
+
     // Redes Socials
     'instagram' => 'https://www.instagram.com/riocleaningorlando/',
     'facebook' => 'https://www.facebook.com/riocleaningorlando/',
@@ -19,7 +22,21 @@ return [
     'tiktok' => 'https://www.tiktok.com/@riocleaning',
     'linkedin' => '',
     //FIM  Redes Socials
-    'name' => env('APP_NAME', 'Rio Cleaning Service'),
+    //Contatos
+    'email' => 'contact@theriocleaning.com',
+    //FIXO 2
+    'telefone_fixo_script' => '',
+    'telefone_fixo' => '',
+    // FIXO 2
+    'telefone_fixo2_script' => '',
+    'telefone_fixo2' => '',
+    //MOBILE 1
+    'celular_script' => '+1 980 337 1144',
+    'celular' => '980 337 1144',
+    //MOBILE 2
+    'celular_script2' => '+1 843 446 9274',
+    'celular2' => '843 446 9274',
+
 
     /*
     |--------------------------------------------------------------------------

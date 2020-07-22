@@ -291,6 +291,13 @@ select.list-dt:focus {
     border-radius: 0.5rem;
 
 }
+.extra-item.active{
+    color: white;
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+    border-radius: 0.5rem;
+
+}
 .extra-item a:hover span{
     color: white !important;
 }
@@ -362,4 +369,7 @@ select.list-dt:focus {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
+  }
+  .navbar-dark .navbar-nav .nav-link{
+      color: #fff;
   }

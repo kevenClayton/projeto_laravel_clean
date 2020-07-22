@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
   <!-- Contact cards (details)-->
   <section class="container-fluid bg-overlay-content mb-5 mb-md-6" style="margin-top: -120px;">
     <div class="row">
@@ -191,50 +191,50 @@
             </div>
             <div class="col-4   ">
               <div class="card border border-dark mb-4 extra-item">
-                <a href="#">
+                {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
                     <span class="text-muted font-size-md">Inside Windows</span>
                     </div>
-                </a>
+                {{-- </a> --}}
               </div>
             </div>
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
-                <a href="#">
+              <div class="card border border-dark mb-4 extra-item active" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+                {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
                     <span class="text-muted font-size-md">Inside Cabinets</span>
                     </div>
-                </a>
+                {{-- </a> --}}
               </div>
             </div>
             <div class="col-4  ">
               <div class="card border border-dark mb-4 extra-item">
-                  <a href="#">
+                  {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
                     <span class="text-muted font-size-md">Baseboards</span>
                     </div>
-                </a>
+                {{-- </a> --}}
               </div>
             </div>
             <div class="col-4  ">
               <div class="card border border-dark mb-4 extra-item">
-                <a href="#" >
+                {{-- <a href="#" > --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
                     <span class="text-muted font-size-md">Inside the Fridge</span>
                     </div>
-                </a>
+                {{-- </a> --}}
               </div>
             </div>
             <!-- <div class="col-3  ">
@@ -252,14 +252,14 @@
             <div class="col-4  ">
 
               <div class="card border border-dark mb-4  extra-item ">
-                <a href="#" >
+                {{-- <a href="#" > --}}
                     <div class="card-body text-center ">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
                     <span class="text-muted font-size-md">Inside the Oven</span>
                     </div>
-                </a>
+                {{-- </a> --}}
               </div>
 
             </div>
@@ -277,14 +277,14 @@
             </div> -->
             <div class="col-4  ">
               <div class="card border border-dark mb-4 extra-item">
-                <a href="#">
+                {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
                     <span class="text-muted font-size-md">Load of Laundry</span>
                     </div>
-                </a>
+                {{-- </a> --}}
               </div>
             </div>
             <!-- <div class="col-3 form-group ">
