@@ -1,7 +1,7 @@
 @extends('front.master.master')
 @section('content')
 <section class="jarallax bg-gradient pt-5 pb-7 pt-md-7" data-jarallax data-speed="0.25"><span class="bg-overlay bg-gradient" style="opacity: .8;"></span>
-    <div class="jarallax-img" style="background-image: url(img/pages/contacts/page-title-bg.jpg);"></div>
+    <div class="jarallax-img" style="background-image: url(img/book-now/background-booknow.jpg);"></div>
     <div class="cs-shape cs-shape-bottom cs-shape-slant bg-body">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 260">
         <polygon fill="currentColor" points="0,257 0,260 3000,260 3000,0"></polygon>
@@ -37,7 +37,7 @@
               <input class="form-control bg-image-0" type="text" id="cont-phone" data-format="custom" data-delimiter="-" data-blocks="2 4 2 2" placeholder="00-0000-00-00">
             </div>
             <div class="form-group">
-              <label class="form-label" for="cont-company">Company</label>
+              <label class="form-label" for="cont-company">Your Name</label>
               <input class="form-control bg-image-0" type="text" id="cont-company" placeholder="Your company">
             </div>
             <div class="form-group">
@@ -58,35 +58,25 @@
       </div>
       <div class="col-lg-4 col-md-4 offset-md-1">
         <h2 class="h4 pb-3">Contact details</h2>
-        <h3 class="h6 pb-2">North America - New York, NY</h3>
+        <h3 class="h6 pb-2">North America - Orlando, Flórida</h3>
         <ul class="list-unstyled font-size-sm pb-3">
-          <li class="d-flex align-items-top mb-3"><i class="fe-map-pin font-size-xl text-muted mt-1 mr-2 pr-1"></i>
+          {{-- <li class="d-flex align-items-top mb-3"><i class="fe-map-pin font-size-xl text-muted mt-1 mr-2 pr-1"></i>
             <div>396 Lillian Blvd, Holbrook,<br>NY 11741, USA<br><a class="cs-fancy-link" href="#map" data-scroll>See on the map</a></div>
-          </li>
+          </li> --}}
           <li class="d-flex align-items-center mb-3"><i class="fe-mail font-size-xl text-muted mr-2 pr-1"></i>
-            <div>new.york@example.com</div>
+            <div>{{ config('app.email') }}</div>
           </li>
-          <li class="d-flex align-items-center mb-3"><i class="fe-phone font-size-xl text-muted mr-2 pr-1"></i>
-            <div>+ 1 526 220 0459</div>
+          <li class="d-flex align-items-center mb-3"><i class="fe-smartphone font-size-xl text-muted mr-2 pr-1"></i>
+            <div>{{ config('app.celular') }}</div>
+          </li>
+          <li class="d-flex align-items-center mb-3"><i class="fe-smartphone font-size-xl text-muted mr-2 pr-1"></i>
+            <div>{{ config('app.celular2') }}</div>
           </li>
         </ul>
-        <h3 class="h6 pb-2">Europe - Berlin, Germany</h3>
-        <ul class="list-unstyled font-size-sm">
-          <li class="d-flex align-items-top mb-3"><i class="fe-map-pin font-size-xl text-muted mt-1 mr-2 pr-1"></i>
-            <div>Mohrenstrasse 37 10117,<br>Berlin, Germany<br></div>
-          </li>
-          <li class="d-flex align-items-center mb-3"><i class="fe-mail font-size-xl text-muted mr-2 pr-1"></i>
-            <div>berlin@example.com</div>
-          </li>
-          <li class="d-flex align-items-center mb-3"><i class="fe-phone font-size-xl text-muted mr-2 pr-1"></i>
-            <div>030 778 345 26</div>
-          </li>
-        </ul>
+
       </div>
     </div>
   </section>
   <!-- Map-->
-  <section class="cs-gallery" id="map"><a class="cs-gallery-item cs-map-popup bg-position-center bg-no-repeat py-7 text-center" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91476818218!2d-74.11976253858133!3d40.69740344296443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sua!4v1568574342685!5m2!1sen!2sua" data-iframe="true" data-sub-html="&lt;h6 class=&quot;font-size-sm text-light&quot;&gt;396 Lillian Blvd, Holbrook, NY 11741&lt;/h6&gt;" style="background-image: url(img/pages/contacts/map01.jpg);"><span class="cs-gallery-caption"><i class="fe-maximize-2 font-size-xl mt-n1 mr-2"></i>Expand the map</span>
-      <div class="d-inline-block py-4 py-md-6"><img width="48" src="img/pages/contacts/marker.png" alt="Map marker"/>
-      </div></a></section>
+
 @endsection

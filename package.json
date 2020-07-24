@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "bootstrap-icons": "^1.0.0-alpha5",
+        "braintree-web": "^3.63.0",
         "feather-icons": "^4.28.0",
         "flatpickr": "^4.6.3",
         "install": "^0.13.0",

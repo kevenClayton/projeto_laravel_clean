@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,9 +11,11 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../resources/img/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#766df4">
@@ -48,7 +50,7 @@
   <!-- Body-->
   <body>
     <!-- Google Tag Manager (noscript)-->
-
+    @yield('script_paypal')
     <!-- Page loading spinner-->
     <div class="cs-page-loading active">
       <div class="cs-page-loading-inner">
@@ -137,6 +139,7 @@
     @yield('content')
     @include('front.includes.footer')
 
+
     <!-- Back to top button-->
     <a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon fe-arrow-up">   </i></a>
     <!-- Vendor scrits: js libraries and plugins-->
@@ -151,7 +154,7 @@
     <script src="js/theme.min.js"></script>
     <script src="js/app.js"></script>
     <script async src="https://www.tiktok.com/embed.js"></script>
-
+    @yield('botoes_paypal')
   </body>
 
 <!-- Mirrored from demo.createx.studio/around/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jun 2020 02:37:47 GMT -->

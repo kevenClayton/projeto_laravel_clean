@@ -23,7 +23,8 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="{{ route('home') }}">Home</a>
             </li>
-            <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="{{ route('book_now') }}" data-toggle="dropdown">Book Now</a>
+            <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="{{ route('book_now') }}" data-toggle="dropdown">Book Now</a>
               <div class="dropdown-menu">
                 <a class="dropdown-column dropdown-column-img bg-secondary" href="{{ route('book_now') }}" style="background-image: url(img/demo/menu-banner.jpg);"></a>
                 <div class="dropdown-column">
@@ -49,16 +50,17 @@
                 </div>
               </div>
             </li>
+
             {{-- <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#">Pricing</a> --}}
-            </li>
+            {{-- </li> --}}
             <li class="nav-item dropdown dropdown-mega">
-                <a class="nav-link dropdown-toggle" href="{{ route('about') }}" data-toggle="dropdown">About</a>
+                <a class="nav-link dropdown-toggle" href="{{ route('about') }}">About</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{ route('contact') }}" data-toggle="dropdown">Contact</a>
+                <a class="nav-link dropdown-toggle" href="{{ route('contact') }}">Contact</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{ route('faq') }}" data-toggle="dropdown">FAQ</a>
+                <a class="nav-link dropdown-toggle" href="{{ route('faq') }}">FAQ</a>
             </li>
             {{-- <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Docs / UI Kit</a>
               <ul class="dropdown-menu">

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', 'WebController@home')->name('home');
 Route::get('/book-now', 'WebController@book_now')->name('book_now');
 Route::get('/about', 'WebController@about')->name('about');
 Route::get('/contact', 'WebController@contact')->name('contact');
 Route::get('/faq', 'WebController@faq')->name('faq');
 Route::get('/tiktok', 'WebController@tiktok')->name('tiktok');
+Route::view('/paypal', 'paypal');
+
+Route::post('/pagar', 'PagamentoController@pagarComPayPal')->name('pagar_com_paypal');

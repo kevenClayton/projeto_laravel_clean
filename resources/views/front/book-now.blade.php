@@ -383,18 +383,63 @@
                 <div class="card-header p-3">
                   <div class="p-1">
                     <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#paypal">
-                      <input class="custom-control-input" type="radio" id="paypal-radio" name="payment_method">
-                      <label class="custom-control-label d-flex align-items-center h6 mb-0" for="paypal-radio"><span>PayPal</span><img class="ml-3" width="20" src="img/shop/paypal.png" alt="PayPal"/>
+                      <input class="custom-control-input" type="radio" id="paypal-radio" name="payment_method" checked>
+                      <label class="custom-control-label d-flex align-items-center h6 mb-0" for="paypal-radio">
+                          <span>PayPal</span><img class="ml-3" width="20" src="img/shop/paypal.png" alt="PayPal"/>
                       </label>
                     </div>
                   </div>
                 </div>
                 <div class="collapse show" id="paypal" data-parent="#payment-methods">
                   <div class="card-body">
-                    <p class="font-size-ms">By clicking on the button below you will be redirected to your PayPal account to complete the payment.</p><a class="d-inline-block" href="#"><img class="d-block" width="200" src="img/shop/paypal-button.png" alt="PayPal"/></a>
+                    <p class="font-size-ms">By clicking on the button below you will be redirected to your PayPal account to complete the payment.</p>
+                    <div id="paypal-button-container"></div>
+                    {{-- <a class="d-inline-block" href="#">
+                        <img class="d-block" width="200" src="img/shop/paypal-button.png" alt="PayPal"/>
+                    </a> --}}
                   </div>
                 </div>
               </div>
+              {{-- Card pagamento --}}
+              <div class="card border-0 box-shadow">
+                <div class="card-header p-3">
+                  <div class="p-1">
+                    <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#zelle">
+                      <input class="custom-control-input" type="radio" id="cash-radio" name="payment_method">
+                      <label class="custom-control-label d-flex h6 mb-0" for="cash-radio">
+                          <span>Zelle Pay</span><img class="ml-3" width="20" src="img/icons/zelle-pay.png" alt="zelle pay"/>
+                        </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="zelle" data-parent="#payment-methods">
+                  <div class="card-body">
+                    <p class="font-size-ms mb-0"> Contact us through the number <span class="bg-faded-primary text-primary">843 446 9274</span> to make the payment by zelle pay
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {{-- Card Pagamento --}}
+              {{-- Card pagamento --}}
+              <div class="card border-0 box-shadow">
+                <div class="card-header p-3">
+                  <div class="p-1">
+                    <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#venmo">
+                      <input class="custom-control-input" type="radio" id="cash-radio" name="payment_method">
+                      <label class="custom-control-label d-flex h6 mb-0" for="cash-radio">
+                          <span>Venmo</span><img class="ml-3" width="20" src="img/icons/venmo.png" alt="Venmo pay"/>
+                        </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="venmo" data-parent="#payment-methods">
+                  <div class="card-body">
+                    <p class="font-size-ms mb-0"> Contact us through the number <span class="bg-faded-primary text-primary">843 446 9274</span> to make the payment by zelle pay
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {{-- Card Pagamento --}}
               <div class="card border-0 box-shadow">
                 <div class="card-header p-3">
                   <div class="p-1">
@@ -417,4 +462,34 @@
       </div>
     </div>
   </form>
+@endsection
+@section('botoes_paypal')
+    {{-- <script>paypal.Buttons().render('#paypal-button-container');</script> --}}
+    <script>
+        paypal.Buttons({
+          createOrder: function(data, actions) {
+            // This function sets up the details of the transaction, including the amount and line item details.
+            return actions.order.create({
+              purchase_units: [{
+                amount: {
+                  value: '0.01'
+                }
+              }]
+            });
+          },
+          onApprove: function(data, actions) {
+            // This function captures the funds from the transaction.
+            return actions.order.capture().then(function(details) {
+              // This function shows a transaction success message to your buyer.
+              alert('Transaction completed by ' + details.payer.name.given_name);
+            });
+          }
+        }).render('#paypal-button-container');
+        //This function displays Smart Payment Buttons on your web page.
+      </script>
+@endsection
+@section('script_paypal')
+    <script
+    src="https://www.paypal.com/sdk/js?client-id=AR8hkluSPnK_-QLn7GFh_2CBsKD2fjjIe3mIat9BLz9DzKCs7fW_pWFqVLIZ1ao0QsIeOU0oTItFilfF&currency=BRL"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+    </script>
 @endsection
