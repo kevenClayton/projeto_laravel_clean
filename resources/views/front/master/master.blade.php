@@ -143,16 +143,17 @@
     <!-- Back to top button-->
     <a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon fe-arrow-up">   </i></a>
     <!-- Vendor scrits: js libraries and plugins-->
-    <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/book-now.js"></script>
+    {{-- <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
     <script src="vendor/simplebar/dist/simplebar.min.js"></script>
     <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
-    <script src="js/book-now.js"></script>
+    <script src="vendor/parallax-js/dist/parallax.min.js"></script> --}}
+
     <!-- Main theme script-->
     <script src="js/theme.min.js"></script>
-    <script src="js/app.js"></script>
+
     <script async src="https://www.tiktok.com/embed.js"></script>
     @yield('botoes_paypal')
   </body>

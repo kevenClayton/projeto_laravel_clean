@@ -140,7 +140,7 @@
 
 
             <div class="col-6 form-group">
-              <label class="form-label" for="ch-postcode">Postcode<sup class="text-danger ml-1">*</sup></label>
+              <label class="form-label" for="ch-postcode">Zipcode<sup class="text-danger ml-1">*</sup></label>
               <input class="form-control" type="text" id="ch-postcode" required>
             </div>
 
@@ -161,16 +161,16 @@
             </div>
                 <div class="col-6 form-group ">
                     <label class="form-label" for="ch-country">Choose your service<sup class="text-danger ml-1">*</sup></label>
-                    <select class="form-control custom-select" id="ch-country" required>
+                    <select name="type-service" class="form-control custom-select" id="type-service" required>
                       <option value="" selected disabled hidden>Select your service type</option>
-                      <option value="0-1000">General Clean</option>
-                      <option value="1001-1500">Deep Clean / Move Out / Party Cleaning</option>
-                      <option value="1501-2000">Hoarding Clean Out / Pos Contruction </option>
+                      <option value="generalClean">General Clean</option>
+                      <option value="deepClean">Deep Clean / Move Out / Party Cleaning</option>
+                      <option value="hoardingClean">Hoarding Clean Out / Pos Contruction </option>
                     </select>
                 </div>
                 <div class="col-6 form-group ">
                     <label class="form-label" for="ch-country">Home Square Footage<sup class="text-danger ml-1">*</sup></label>
-                    <select class="form-control custom-select" id="ch-country" required>
+                    <select name="size-property" class="form-control custom-select" id="size-property" required>
                       <option value="" selected disabled hidden>Select the footage of your property</option>
                       <option value="0-1000">0 - 1000m²</option>
                       <option value="1001-1500">1001 - 1500m²</option>
@@ -181,7 +181,7 @@
                       <option value="3501-4000">3501 - 4000m²</option>
                       <option value="4001-4500">4001 - 4500m²</option>
                       <option value="4501-5000">4501 - 5000m²</option>
-                      <option value="4501-5000">Greater Than 5000</option>
+                      <option value="5000>">Greater Than 5000</option>
                     </select>
                 </div>
             <!-- Section Serviços Extras e datas-->
@@ -322,20 +322,6 @@
               </div>
             </div>
 
-            <div class="form-group">
-                <label>Date range</label>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text bg-secondary">
-                      <i class="fe-calendar"></i>
-                    </span>
-                  </div>
-                  <input class="form-control cs-date-picker cs-date-range" type="text" placeholder="From date" data-datepicker-options='{"altInput": true, "altFormat": "F j, Y", "dateFormat": "Y-m-d"}' data-linked-input="#end-date">
-                  <input class="form-control cs-date-picker" type="text" placeholder="To date" data-datepicker-options='{"altInput": true, "altFormat": "F j, Y", "dateFormat": "Y-m-d"}' id="end-date">
-                </div>
-              </div>
-
-
           </div>
         </div>
         <!-- Sidebar-->
@@ -345,10 +331,20 @@
             <h2 class="h4 pb-3">Your Service</h2>
 
             <hr class="mb-4">
-            <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Subtotal:</span><span class="text-nav">$776.99</span></div>
-            <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Tax:</span><span class="text-nav">&mdash;</span></div>
-            <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Shipping:</span><span class="text-nav">$12.35</span></div>
-            <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Total:</span><span class="h6 mb-0">$789.34</span></div>
+            <div class="d-flex justify-content-between mb-3">
+                <span class="h6 mb-0">Subtotal:</span>
+                <span class="text-nav">
+                    <span id="subtotal">—</span>
+                </span>
+
+            </div>
+            {{-- <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Tax:</span><span class="text-nav">&mdash;</span></div> --}}
+            <div class="d-flex justify-content-between mb-3">
+                <span class="h6 mb-0">Tip:</span>
+                <span id="tip" class="text-nav" >—</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Total:</span>
+                <span id="valorTotal" class="h6 mb-0">—</span></div>
             <div class="accordion accordion-alt pt-4 mb-grid-gutter" id="payment-methods">
               {{-- <div class="card border-0 box-shadow card-active">
                 <div class="card-header p-3">
@@ -462,17 +458,39 @@
       </div>
     </div>
   </form>
+  <div class="modal fade" id="modal-coupon" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Coupon code</h4>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <form class="modal-body needs-validation" novalidate>
+          <div class="input-group">
+            <input class="form-control" type="text" placeholder="Your coupon code" required>
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">Apply code</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 @endsection
 @section('botoes_paypal')
     {{-- <script>paypal.Buttons().render('#paypal-button-container');</script> --}}
+
     <script>
+        debugger
+
+
         paypal.Buttons({
           createOrder: function(data, actions) {
             // This function sets up the details of the transaction, including the amount and line item details.
             return actions.order.create({
               purchase_units: [{
                 amount: {
-                  value: '0.01'
+                  value: valorPaypal
                 }
               }]
             });
@@ -487,9 +505,10 @@
         }).render('#paypal-button-container');
         //This function displays Smart Payment Buttons on your web page.
       </script>
+
 @endsection
 @section('script_paypal')
     <script
-    src="https://www.paypal.com/sdk/js?client-id=AR8hkluSPnK_-QLn7GFh_2CBsKD2fjjIe3mIat9BLz9DzKCs7fW_pWFqVLIZ1ao0QsIeOU0oTItFilfF&currency=BRL"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+        src="https://www.paypal.com/sdk/js?client-id=AR8hkluSPnK_-QLn7GFh_2CBsKD2fjjIe3mIat9BLz9DzKCs7fW_pWFqVLIZ1ao0QsIeOU0oTItFilfF&currency=BRL"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
     </script>
 @endsection

@@ -45,8 +45,8 @@
              <!-- <a class="btn btn-translucent-light" href="#">Book Now</a> -->
             {{-- <p class="h4 font-weight-light text-light opacity-70 line-height-base"> --}}
             </p>
-            <button type="button" class="btn btn-lg btn-primary" style="    padding: 13px 108px;
-            border-radius: 38px;">Book Now</button>
+            <a href="{{ route('book_now') }}"><button type="button" class="btn btn-lg btn-primary" style="padding: 13px 108px;
+            border-radius: 38px;">Book Now</button></a>
 
             {{-- <a class="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5" href="{{ route('book_now') }}" data-scroll>
                 <span class="btn btn-icon rounded-circle border-primary">

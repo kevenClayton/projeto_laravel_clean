@@ -58,19 +58,19 @@
       </div>
       <div class="col-lg-4 col-md-4 offset-md-1">
         <h2 class="h4 pb-3">Contact details</h2>
-        <h3 class="h6 pb-2">North America - Orlando, Flórida</h3>
+        <h3 class="h6 pb-2">{{ config('app.endereco') }}</h3>
         <ul class="list-unstyled font-size-sm pb-3">
           {{-- <li class="d-flex align-items-top mb-3"><i class="fe-map-pin font-size-xl text-muted mt-1 mr-2 pr-1"></i>
             <div>396 Lillian Blvd, Holbrook,<br>NY 11741, USA<br><a class="cs-fancy-link" href="#map" data-scroll>See on the map</a></div>
           </li> --}}
           <li class="d-flex align-items-center mb-3"><i class="fe-mail font-size-xl text-muted mr-2 pr-1"></i>
-            <div>{{ config('app.email') }}</div>
+            <div><a href="{{ config('app.email') }}">{{ config('app.email') }}</a></div>
           </li>
           <li class="d-flex align-items-center mb-3"><i class="fe-smartphone font-size-xl text-muted mr-2 pr-1"></i>
-            <div>{{ config('app.celular') }}</div>
+            <div><a href="{{ config('app.celular') }}">{{ config('app.celular') }}</a></div>
           </li>
           <li class="d-flex align-items-center mb-3"><i class="fe-smartphone font-size-xl text-muted mr-2 pr-1"></i>
-            <div>{{ config('app.celular2') }}</div>
+            <div><a href="{{ config('app.celular2') }}">{{ config('app.celular2') }}</a></div>
           </li>
         </ul>
 

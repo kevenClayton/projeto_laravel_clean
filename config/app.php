@@ -22,6 +22,8 @@ return [
     'tiktok' => 'https://www.tiktok.com/@riocleaning',
     'linkedin' => '',
     //FIM  Redes Socials
+    //Endereço
+    'endereco'=> 'North America - Orlando, Flórida',
     //Contatos
     'email' => 'contact@theriocleaning.com',
     //FIXO 2
