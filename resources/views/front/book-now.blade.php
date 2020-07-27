@@ -190,49 +190,49 @@
                 <h2 class="h3 pb-3"><span class="font-weight-light">Select</span> Extras</h2>
             </div>
             <div class="col-4   ">
-              <div class="card border border-dark mb-4 extra-item">
+              <div class="card border border-dark mb-4 extra-item" data-extra="inside-windows" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Inside Windows</span>
+                    <span class=" font-size-md">Inside Windows</span>
                     </div>
                 {{-- </a> --}}
               </div>
             </div>
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item active" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+              <div class="card border border-dark mb-4 extra-item "  data-extra="inside-cabinets" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Inside Cabinets</span>
+                    <span class=" font-size-md">Inside Cabinets</span>
                     </div>
                 {{-- </a> --}}
               </div>
             </div>
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item">
+              <div class="card border border-dark mb-4 extra-item"  data-extra="baseboard" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                   {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Baseboards</span>
+                    <span class=" font-size-md">Baseboards</span>
                     </div>
                 {{-- </a> --}}
               </div>
             </div>
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item">
+              <div class="card border border-dark mb-4 extra-item" data-extra="inside-the-fridge" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#" > --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Inside the Fridge</span>
+                    <span class=" font-size-md">Inside the Fridge</span>
                     </div>
                 {{-- </a> --}}
               </div>
@@ -244,20 +244,20 @@
                         <p class="card-text font-size-xl">
                             <i class="fe-bell"></i>
                         </p>
-                        <span class="text-muted font-size-md">Move In / Move Out</span>
+                        <span class=" font-size-md">Move In / Move Out</span>
                         </div>
                     </a>
                 </div>
             </div> -->
             <div class="col-4  ">
 
-              <div class="card border border-dark mb-4  extra-item ">
+              <div class="card border border-dark mb-4  extra-item " data-extra="inside-the-oven" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#" > --}}
                     <div class="card-body text-center ">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Inside the Oven</span>
+                    <span class=" font-size-md">Inside the Oven</span>
                     </div>
                 {{-- </a> --}}
               </div>
@@ -270,19 +270,19 @@
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Deep Cleaning</span>
+                    <span class=" font-size-md">Deep Cleaning</span>
                     </div>
                 </a>
               </div>
             </div> -->
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item">
+              <div class="card border border-dark  mb-4 extra-item" data-extra="load-of-laudry" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Load of Laundry</span>
+                    <span class=" font-size-md">Load of Laundry</span>
                     </div>
                 {{-- </a> --}}
               </div>
@@ -294,7 +294,7 @@
                     <p class="card-text font-size-xl">
                         <i class="fe-bell"></i>
                     </p>
-                    <span class="text-muted font-size-md">Rent A Vacuum</span>
+                    <span class=" font-size-md">Rent A Vacuum</span>
                     </div>
                 </a>
               </div>
@@ -344,7 +344,7 @@
                 <span id="tip" class="text-nav" >—</span>
             </div>
             <div class="d-flex justify-content-between mb-3"><span class="h6 mb-0">Total:</span>
-                <span id="valorTotal" class="h6 mb-0">—</span></div>
+                <span id="valor-total" class="h6 mb-0">—</span></div>
             <div class="accordion accordion-alt pt-4 mb-grid-gutter" id="payment-methods">
               {{-- <div class="card border-0 box-shadow card-active">
                 <div class="card-header p-3">
@@ -467,9 +467,9 @@
         </div>
         <form class="modal-body needs-validation" novalidate>
           <div class="input-group">
-            <input class="form-control" type="text" placeholder="Your coupon code" required>
+            <input id="cupom-code" class="form-control" type="text" placeholder="Your coupon code" required>
             <div class="input-group-append">
-              <button class="btn btn-primary" type="submit">Apply code</button>
+              <button id="btn-cupom" class="btn btn-primary">Apply code</button>
             </div>
           </div>
         </form>
@@ -481,29 +481,12 @@
     {{-- <script>paypal.Buttons().render('#paypal-button-container');</script> --}}
 
     <script>
-        debugger
 
 
-        paypal.Buttons({
-          createOrder: function(data, actions) {
-            // This function sets up the details of the transaction, including the amount and line item details.
-            return actions.order.create({
-              purchase_units: [{
-                amount: {
-                  value: valorPaypal
-                }
-              }]
-            });
-          },
-          onApprove: function(data, actions) {
-            // This function captures the funds from the transaction.
-            return actions.order.capture().then(function(details) {
-              // This function shows a transaction success message to your buyer.
-              alert('Transaction completed by ' + details.payer.name.given_name);
-            });
-          }
-        }).render('#paypal-button-container');
-        //This function displays Smart Payment Buttons on your web page.
+
+      </script>
+      <script>
+
       </script>
 
 @endsection

@@ -292,10 +292,11 @@ select.list-dt:focus {
 
 }
 .extra-item.active{
-    color: white;
+    color: white !important;
     text-decoration: none;
     background-color: var(--cor-primaria);
     border-radius: 0.5rem;
+    border: none !important;
 
 }
 .extra-item a:hover span{

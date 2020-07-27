@@ -18,7 +18,7 @@ class mailer extends Mailable
      */
     public function __construct(\stdClass $user)
     {
-        $
+
     }
 
     /**

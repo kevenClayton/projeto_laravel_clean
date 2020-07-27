@@ -21,33 +21,34 @@
     <div class="row">
       <div class="col-lg-6 col-md-7 offset-lg-1 pb-2 mb-5" style="margin-top: -260px;">
         <div class="card border-0 box-shadow-lg">
-          <form class="card-body needs-validation p-5" novalidate>
+          <form class="card-body needs-validation p-5" action="/enviar" method="post" novalidate>
+            {{ csrf_field() }}
             <div class="form-group">
               <label class="form-label" for="cont-fn">Full name<sup class="text-danger ml-1">*</sup></label>
-              <input class="form-control" type="text" id="cont-fn" placeholder="John Doe" required>
+              <input  name="nameFull" class="form-control" type="text" id="cont-fn" placeholder="John Doe" required>
               <div class="invalid-feedback">Please enter your full name!</div>
             </div>
             <div class="form-group">
               <label class="form-label" for="cont-email">Email address<sup class="text-danger ml-1">*</sup></label>
-              <input class="form-control" type="email" id="cont-email" placeholder="j.doe@example.com" required>
+              <input  name="email" class="form-control" type="email" id="cont-email" placeholder="j.doe@example.com" required>
               <div class="invalid-feedback">Please enter a valid email address!</div>
             </div>
             <div class="form-group">
               <label class="form-label" for="cont-phone">Phone number</label>
-              <input class="form-control bg-image-0" type="text" id="cont-phone" data-format="custom" data-delimiter="-" data-blocks="2 4 2 2" placeholder="00-0000-00-00">
+              <input name="phone" class="form-control bg-image-0" type="text" id="cont-phone" data-format="custom" data-delimiter="-" data-blocks="2 4 2 2" placeholder="00-0000-00-00">
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
               <label class="form-label" for="cont-company">Your Name</label>
-              <input class="form-control bg-image-0" type="text" id="cont-company" placeholder="Your company">
-            </div>
+              <input name="" class="form-control bg-image-0" type="text" id="cont-company" placeholder="Your company">
+            </div> --}}
             <div class="form-group">
               <label class="form-label" for="cont-subject">Subject<sup class="text-danger ml-1">*</sup></label>
-              <input class="form-control" type="text" id="cont-subject" placeholder="Title of your message" required>
+              <input name="subject" class="form-control" type="text" id="cont-subject" placeholder="Title of your message" required>
               <div class="invalid-feedback">Please enter a subject!</div>
             </div>
             <div class="form-group">
               <label class="form-label" for="cont-message">Message<sup class="text-danger ml-1">*</sup></label>
-              <textarea class="form-control" id="cont-message" rows="5" placeholder="Write your message here" required></textarea>
+              <textarea name="message" class="form-control" id="cont-message" rows="5" placeholder="Write your message here" required></textarea>
               <div class="invalid-feedback">Please write a message!</div>
             </div>
             <div class="text-center pt-2">

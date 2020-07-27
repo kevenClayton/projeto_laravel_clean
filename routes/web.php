@@ -21,6 +21,5 @@ Route::get('/about', 'WebController@about')->name('about');
 Route::get('/contact', 'WebController@contact')->name('contact');
 Route::get('/faq', 'WebController@faq')->name('faq');
 Route::get('/tiktok', 'WebController@tiktok')->name('tiktok');
-Route::view('/paypal', 'paypal');
 
-Route::post('/pagar', 'PagamentoController@pagarComPayPal')->name('pagar_com_paypal');
+Route::post('/enviar', 'ContatoController@enviaContato');

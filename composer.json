@@ -11,12 +11,14 @@
         "php": "^7.2.5",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
-        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle": "^7.0",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "paypal/rest-api-sdk-php": "^1.14",
-        "twbs/bootstrap": "4.5.0"
+        "s-ichikawa/laravel-sendgrid-driver": "^3.0",
+        "twbs/bootstrap": "4.5.0",
+        " sendgrid / sendgrid " : " ~ 7 "
     },
     "require-dev": {
         "facade/ignition": "^2.0",
