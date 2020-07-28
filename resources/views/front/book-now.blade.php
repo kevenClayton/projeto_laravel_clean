@@ -190,7 +190,7 @@
                 <h2 class="h3 pb-3"><span class="font-weight-light">Select</span> Extras</h2>
             </div>
             <div class="col-4   ">
-              <div class="card border border-dark mb-4 extra-item" data-extra="inside-windows" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+              <div class="card border border-dark mb-4 extra-item" data-extra="inside-windows"  data-codigo="1" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
@@ -202,7 +202,7 @@
               </div>
             </div>
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item "  data-extra="inside-cabinets" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+              <div class="card border border-dark mb-4 extra-item "  data-extra="inside-cabinets"  data-codigo="2" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
@@ -214,7 +214,7 @@
               </div>
             </div>
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item"  data-extra="baseboard" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+              <div class="card border border-dark mb-4 extra-item"  data-extra="baseboard"  data-codigo="3" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                   {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
@@ -226,7 +226,7 @@
               </div>
             </div>
             <div class="col-4  ">
-              <div class="card border border-dark mb-4 extra-item" data-extra="inside-the-fridge" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+              <div class="card border border-dark mb-4 extra-item" data-extra="inside-the-fridge"  data-codigo="4" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#" > --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
@@ -251,7 +251,7 @@
             </div> -->
             <div class="col-4  ">
 
-              <div class="card border border-dark mb-4  extra-item " data-extra="inside-the-oven" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+              <div class="card border border-dark mb-4  extra-item " data-extra="inside-the-oven"  data-codigo="5" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#" > --}}
                     <div class="card-body text-center ">
                     <p class="card-text font-size-xl">
@@ -276,7 +276,7 @@
               </div>
             </div> -->
             <div class="col-4  ">
-              <div class="card border border-dark  mb-4 extra-item" data-extra="load-of-laudry" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
+              <div class="card border border-dark  mb-4 extra-item" data-extra="load-of-laudry" data-codigo="6" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
@@ -285,6 +285,7 @@
                     <span class=" font-size-md">Load of Laundry</span>
                     </div>
                 {{-- </a> --}}
+                <input id="input-extras" type="text" hidden />
               </div>
             </div>
             <!-- <div class="col-3 form-group ">
@@ -335,6 +336,13 @@
                 <span class="h6 mb-0">Subtotal:</span>
                 <span class="text-nav">
                     <span id="subtotal">—</span>
+                </span>
+
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+                <span class="h6 mb-0">Extras:</span>
+                <span class="text-nav">
+                    <span id="services-extras">—</span>
                 </span>
 
             </div>
@@ -401,8 +409,8 @@
                 <div class="card-header p-3">
                   <div class="p-1">
                     <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#zelle">
-                      <input class="custom-control-input" type="radio" id="cash-radio" name="payment_method">
-                      <label class="custom-control-label d-flex h6 mb-0" for="cash-radio">
+                      <input class="custom-control-input" type="radio" id="zelle-radio" name="payment_method">
+                      <label class="custom-control-label d-flex h6 mb-0" for="zelle-radio">
                           <span>Zelle Pay</span><img class="ml-3" width="20" src="img/icons/zelle-pay.png" alt="zelle pay"/>
                         </label>
                     </div>
@@ -421,8 +429,8 @@
                 <div class="card-header p-3">
                   <div class="p-1">
                     <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#venmo">
-                      <input class="custom-control-input" type="radio" id="cash-radio" name="payment_method">
-                      <label class="custom-control-label d-flex h6 mb-0" for="cash-radio">
+                      <input class="custom-control-input" type="radio" id="venmo-radio" name="payment_method">
+                      <label class="custom-control-label d-flex h6 mb-0" for="venmo-radio">
                           <span>Venmo</span><img class="ml-3" width="20" src="img/icons/venmo.png" alt="Venmo pay"/>
                         </label>
                     </div>
@@ -440,8 +448,8 @@
                 <div class="card-header p-3">
                   <div class="p-1">
                     <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#cash">
-                      <input class="custom-control-input" type="radio" id="cash-radio" name="payment_method">
-                      <label class="custom-control-label d-flex h6 mb-0" for="cash-radio">Cash on delivery</label>
+                      <input class="custom-control-input" type="radio" id="cash-delivery" name="payment_method">
+                      <label class="custom-control-label d-flex h6 mb-0" for="cash-delivery">Cash on delivery</label>
                     </div>
                   </div>
                 </div>
@@ -458,6 +466,7 @@
       </div>
     </div>
   </form>
+  {{-- Modal Cupom de desconto --}}
   <div class="modal fade" id="modal-coupon" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">

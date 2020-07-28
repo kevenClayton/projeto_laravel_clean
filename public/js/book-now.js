@@ -1,3 +1,5 @@
+
+
 // function calculaExtra() {
     var promocao10 = 'save10';
     var valorPromocao = promocao10;
@@ -5,7 +7,7 @@
 
 
     $('#btn-cupom').click(function(){
-        debugger
+
         event.preventDefault();
        var valorCupom = $('#cupom-code').val();
         if (valorCupom == valorPromocao){
@@ -17,18 +19,36 @@
 
 
 
+function salvaValoresExtras() {
+
+    let valores = [] ;
+
+    $('.card.active').each(function() {
+        // valores += $(this).data('codigo');
+        valores.push($(this).data('codigo'));
+    });
+
+    let valorStr = valores.toString();
+
+    $('#input-extras').val(valorStr);
+
+}
 
     $(".extra-item").click(function(){
-        if($(this).hasClass("active")){
+        if ($(this).hasClass("active")){
             $(this).removeClass("active");
-        }else {
-            $(this).addClass("active");
-            calculaValor($('#type-service').val(),  $('#size-property').val(), $(this).data("extra"));
+            salvaValoresExtras();
         }
+        else  {
+
+            $(this).addClass("active");
+
+            salvaValoresExtras();
+            // calculaValor($('#type-service').val(),  $('#size-property').val(), valorExtra);
+        }
+        calculaValor($('#type-service').val(), $('#size-property').val());
 
         // let valorExtra = $(this).data("extra");
-
-
         // calculaExtra(valorExtra, $('#size-property').val() );
     });
 
@@ -58,17 +78,29 @@ $('#size-property').change(function (){
 
 
 
-function calculaValor (typeService, sizeProperty,  valorExtra) {
-    debugger
-
-    var teste = [];
+function calculaValor (typeService, sizeProperty) {
 
 
 
+
+    // if (typeService == undefined || typeService == null || typeService == ''){
+    //     return false;
+    // }
+    // if (sizeProperty == undefined || sizeProperty == null || sizeProperty == ''){
+    //     return false;
+    // }
     // teste = valorExtra[];
-    console.log(teste);
+    // console.log(teste);
 
-    if (typeService && sizeProperty !=  undefined){
+    // if (valorExtra == 'inside-windows'){
+    //     var insideWindows = 'inside-windows';
+
+    // }else if(valorExtra == 'inside-cabinets') {
+    //     var insideCabinets = 'inside-cabinets';
+    // }
+    var valorService = 0 ;
+
+    if (typeService !=  undefined && sizeProperty !=  undefined){
     //Verificar 0 a 1000
         if (typeService == 'generalClean' && sizeProperty == '0-1000'){
             var valorService =  90;
@@ -187,25 +219,192 @@ function calculaValor (typeService, sizeProperty,  valorExtra) {
             var hourService =  50;
         }
 
-        var porcetagem  = (valorService*valorPorcentagem)/100;
-        var valorTotal =  valorService+porcetagem;
-
-        $("#subtotal").text('$'+valorService+'.00 ');
-        $('#tip').text('$'+porcetagem+'.00');
-        $('#valor-total').text('$'+valorTotal+'.00');
 
 
 
-        $('#paypal-button-container').empty();
-
-        chamarPaypal(valorTotal);
 
     }
- }
+
+    let valoresInput = $("#input-extras").val();
+
+    valoresInput = valoresInput.split(",");
+
+    var valorServiceExtras1 = 0;
+    var valorServiceExtras2 = 0;
+    var valorServiceExtras3 = 0;
+    var valorServiceExtras4 = 0;
+    var valorServiceExtras5 = 0;
+    var valorServiceExtras6 = 0;
+    var valorServiceExtras7 = 0;
+    var valorServiceExtras8 = 0;
+    var valorServiceExtras9 = 0;
+    var valorServiceExtras10 = 0;
+    var valorServiceExtras11 = 0;
+    var valorServiceExtras12 = 0;
+    var valorServiceExtras13 = 0;
+    var valorServiceExtras14 = 0;
+    var valorServiceExtras15 = 0;
+    var valorServiceExtras16 = 0;
+    var valorServiceExtras17 = 0;
+    var valorServiceExtras18 = 0;
+    var valorServiceExtras19 = 0;
+    var valorServiceExtras20 = 0;
+    var valorServiceExtras21 = 0;
+    var valorServiceExtras22 = 0;
+    var valorServiceExtras23 = 0;
+    var valorServiceExtras24 = 0;
+    var valorServiceExtras25 = 0;
+    var valorServiceExtras26 = 0;
+    var valorServiceExtras27 = 0;
+    var valorServiceExtras28 = 0;
+    var valorServiceExtras29 = 0;
+    var valorServiceExtras30 = 0;
+
+
+    if(sizeProperty == '0-1000'){
+        // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+            valorServiceExtras1 = 25;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+            valorServiceExtras2 = 25;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+            valorServiceExtras3 = 25;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+            valorServiceExtras4 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+            valorServiceExtras5 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+            valorServiceExtras6 = 25;
+        }
+    }
+    if(sizeProperty == '1001-1500'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras7 = 30;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras8 = 30;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras9 = 30;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras10 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras11 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras12 = 30;
+        }
+    }
+    if(sizeProperty == '1501-2000'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras13 = 30;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras14 = 30;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras15 = 30;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras16 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras17 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras18 = 30;
+        }
+    }
+    if(sizeProperty == '2001-2500'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras19 = 40;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras20 = 40;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras21 = 30;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras22 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras23 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras24 = 50;
+        }
+    }
+    if(sizeProperty == '2501-3000'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras25 = 50;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras26 = 50;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras27 = 40;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras28 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras29 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras30 = 60;
+        }
+    }
+
+    debugger
+    var valorTotalExtras = 0;
+    valorTotalExtras = valorServiceExtras1 + valorServiceExtras2 + valorServiceExtras3
+                        + valorServiceExtras4 + valorServiceExtras5 +  valorServiceExtras6
+                        + valorServiceExtras7 + valorServiceExtras8 +  valorServiceExtras9
+                        + valorServiceExtras10 + valorServiceExtras11 +  valorServiceExtras12
+                        + valorServiceExtras13 + valorServiceExtras14 +  valorServiceExtras15
+                        + valorServiceExtras16 + valorServiceExtras17 +  valorServiceExtras18
+                        + valorServiceExtras19 + valorServiceExtras20 +  valorServiceExtras21
+                        + valorServiceExtras22 + valorServiceExtras23 +  valorServiceExtras24
+                        + valorServiceExtras25 + valorServiceExtras26 +  valorServiceExtras27
+                        + valorServiceExtras28 + valorServiceExtras29 +  valorServiceExtras30 ;
+
+    var porcetagem = 0 ;
+
+
+    porcetagem  = ((valorService+valorTotalExtras)*valorPorcentagem)/100;
+
+    var valorTotal = 0
+
+    valorTotal =  valorService+porcetagem+valorTotalExtras;
+
+    $("#subtotal").text('$'+valorService+'.00 ');
+    $('#tip').text('$'+porcetagem+'.00');
+    $('#valor-total').text('$'+valorTotal+'.00');
+    $('#services-extras').text('$'+valorTotalExtras+'.00');
+
+
+    $('#paypal-button-container').empty();
+
+    chamarPaypal(valorTotal);
+
+
+}
+
+
 
 function chamarPaypal(valorTotal){
-
-
 
     paypal.Buttons({
     createOrder: function(data, actions) {
