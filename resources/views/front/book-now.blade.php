@@ -500,7 +500,9 @@
 
 @endsection
 @section('script_paypal')
+
     <script
         src="https://www.paypal.com/sdk/js?client-id=AR8hkluSPnK_-QLn7GFh_2CBsKD2fjjIe3mIat9BLz9DzKCs7fW_pWFqVLIZ1ao0QsIeOU0oTItFilfF&currency=BRL"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
     </script>
+
 @endsection
