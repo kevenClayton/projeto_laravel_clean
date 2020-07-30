@@ -45,8 +45,13 @@
 
 
   </head>
-
-  @include('front.includes.header')
+@if (route('faq'))
+    @include('front.includes.header')
+@elseif (route('about'))
+    @include('front.includes.header')
+@else
+    @include('front.includes.header')
+@endif
   <!-- Body-->
   <body>
     <!-- Google Tag Manager (noscript)-->

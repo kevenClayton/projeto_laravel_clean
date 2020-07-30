@@ -279,7 +279,7 @@ select.list-dt:focus {
     font-size: 40px;
 }
 .extra-item .card-body{
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 0.1rem;
 }
 .extra-item a{
     color: #737491;
@@ -297,6 +297,10 @@ select.list-dt:focus {
     background-color: var(--cor-primaria);
     border-radius: 0.5rem;
     border: none !important;
+
+}
+.extra-item.active img{
+   filter: brightness(300%)
 
 }
 .extra-item a:hover span{

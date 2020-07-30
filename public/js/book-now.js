@@ -13,7 +13,10 @@
         if (valorCupom == valorPromocao){
 
         }else{
-            alert('Cupom não existente');
+            $('#error-cupom').show();
+            setTimeout(function(){
+                $('#error-cupom').hide('fast');
+            }, 2000);
         }
     });
 
@@ -42,7 +45,6 @@ function salvaValoresExtras() {
         else  {
 
             $(this).addClass("active");
-
             salvaValoresExtras();
             // calculaValor($('#type-service').val(),  $('#size-property').val(), valorExtra);
         }
@@ -72,7 +74,6 @@ $('#size-property').change(function (){
     calculaValor ( $('#type-service').val(), $(this).val(),$(this).data("extra") );
     // calculaExtra($(this).data("extra"), $(this).val());
 });
-
 
 
 
@@ -259,6 +260,37 @@ function calculaValor (typeService, sizeProperty) {
     var valorServiceExtras28 = 0;
     var valorServiceExtras29 = 0;
     var valorServiceExtras30 = 0;
+    var valorServiceExtras31 = 0;
+    var valorServiceExtras32 = 0;
+    var valorServiceExtras33 = 0;
+    var valorServiceExtras34 = 0;
+    var valorServiceExtras35 = 0;
+    var valorServiceExtras36 = 0;
+    var valorServiceExtras37 = 0;
+    var valorServiceExtras38 = 0;
+    var valorServiceExtras39 = 0;
+    var valorServiceExtras40 = 0;
+    var valorServiceExtras41 = 0;
+    var valorServiceExtras42 = 0;
+    var valorServiceExtras43 = 0;
+    var valorServiceExtras44 = 0;
+    var valorServiceExtras45 = 0;
+    var valorServiceExtras46 = 0;
+    var valorServiceExtras47 = 0;
+    var valorServiceExtras48 = 0;
+    var valorServiceExtras49 = 0;
+    var valorServiceExtras50 = 0;
+    var valorServiceExtras51 = 0;
+    var valorServiceExtras52 = 0;
+    var valorServiceExtras53 = 0;
+    var valorServiceExtras54 = 0;
+    var valorServiceExtras55 = 0;
+    var valorServiceExtras56 = 0;
+    var valorServiceExtras57 = 0;
+    var valorServiceExtras58 = 0;
+    var valorServiceExtras59 = 0;
+    var valorServiceExtras60 = 0;
+
 
 
     if(sizeProperty == '0-1000'){
@@ -367,6 +399,92 @@ function calculaValor (typeService, sizeProperty) {
         }
     }
 
+    // Alterar valores para correto
+    if(sizeProperty == '3001-3500'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras31 = 50;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras32 = 50;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras33 = 40;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras34 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras35 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras36 = 60;
+        }
+    }
+    if(sizeProperty == '3501-4000'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras37 = 50;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras38 = 50;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras39 = 40;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras40 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras41 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras42 = 60;
+        }
+    }
+    if(sizeProperty == '4001-4500'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras43 = 50;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras44 = 50;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras45 = 40;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras46 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras47 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras48 = 60;
+        }
+    }
+    if(sizeProperty == '4501-5000'){
+    // Metragem de 0 a 1000
+        if (valoresInput.indexOf('1') > -1) {
+                valorServiceExtras49 = 50;
+        }
+        if (valoresInput.indexOf('2') > -1) {
+                valorServiceExtras50 = 50;
+        }
+        if (valoresInput.indexOf('3') > -1) {
+                valorServiceExtras51 = 40;
+        }
+        if (valoresInput.indexOf('4') > -1) {
+                valorServiceExtras52 = 30;
+        }
+        if (valoresInput.indexOf('5') > -1) {
+                valorServiceExtras53 = 30;
+        }
+        if (valoresInput.indexOf('6') > -1) {
+                valorServiceExtras54 = 60;
+        }
+    }
+
     debugger
     var valorTotalExtras = 0;
     valorTotalExtras = valorServiceExtras1 + valorServiceExtras2 + valorServiceExtras3
@@ -378,7 +496,18 @@ function calculaValor (typeService, sizeProperty) {
                         + valorServiceExtras19 + valorServiceExtras20 +  valorServiceExtras21
                         + valorServiceExtras22 + valorServiceExtras23 +  valorServiceExtras24
                         + valorServiceExtras25 + valorServiceExtras26 +  valorServiceExtras27
-                        + valorServiceExtras28 + valorServiceExtras29 +  valorServiceExtras30 ;
+                        + valorServiceExtras28 + valorServiceExtras29 +  valorServiceExtras30
+                        + valorServiceExtras31 + valorServiceExtras32 +  valorServiceExtras33
+                        + valorServiceExtras34 + valorServiceExtras35 +  valorServiceExtras36
+                        + valorServiceExtras37 + valorServiceExtras38 +  valorServiceExtras39
+                        + valorServiceExtras40 + valorServiceExtras41 +  valorServiceExtras42
+                        + valorServiceExtras43 + valorServiceExtras44 +  valorServiceExtras45
+                        + valorServiceExtras46 + valorServiceExtras47 +  valorServiceExtras48
+                        + valorServiceExtras49 + valorServiceExtras50 +  valorServiceExtras51
+                        + valorServiceExtras52 + valorServiceExtras53 +  valorServiceExtras54
+                        + valorServiceExtras55 + valorServiceExtras56 +  valorServiceExtras57
+                        + valorServiceExtras58 + valorServiceExtras59 +  valorServiceExtras60;
+
 
     var porcetagem = 0 ;
 
@@ -389,10 +518,10 @@ function calculaValor (typeService, sizeProperty) {
 
     valorTotal =  valorService+porcetagem+valorTotalExtras;
 
-    $("#subtotal").text('$'+valorService+'.00 ');
-    $('#tip').text('$'+porcetagem+'.00');
-    $('#valor-total').text('$'+valorTotal+'.00');
-    $('#services-extras').text('$'+valorTotalExtras+'.00');
+    $("#subtotal").text('$'+valorService+'');
+    $('#tip').text('$'+porcetagem+'');
+    $('#valor-total').text('$'+valorTotal+'');
+    $('#services-extras').text('$'+valorTotalExtras+'');
 
 
     $('#paypal-button-container').empty();
@@ -401,7 +530,6 @@ function calculaValor (typeService, sizeProperty) {
 
 
 }
-
 
 
 function chamarPaypal(valorTotal){

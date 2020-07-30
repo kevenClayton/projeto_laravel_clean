@@ -159,7 +159,7 @@
             <div class="col-12 ">
               <h2 class="h3 pb-3"><span class="font-weight-light">STEP 3:</span> YOUR SERVICE</h2>
             </div>
-                <div class="col-6 form-group ">
+                <div class="col-12 col-sm-6 form-group ">
                     <label class="form-label" for="ch-country">Choose your service<sup class="text-danger ml-1">*</sup></label>
                     <select name="type-service" class="form-control custom-select" id="type-service" required>
                       <option value="" selected disabled hidden>Select your service type</option>
@@ -168,7 +168,7 @@
                       <option value="hoardingClean">Hoarding Clean Out / Pos Contruction </option>
                     </select>
                 </div>
-                <div class="col-6 form-group ">
+                <div class="col-12 col-sm-6 form-group ">
                     <label class="form-label" for="ch-country">Home Square Footage<sup class="text-danger ml-1">*</sup></label>
                     <select name="size-property" class="form-control custom-select" id="size-property" required>
                       <option value="" selected disabled hidden>Select the footage of your property</option>
@@ -181,7 +181,7 @@
                       <option value="3501-4000">3501 - 4000m²</option>
                       <option value="4001-4500">4001 - 4500m²</option>
                       <option value="4501-5000">4501 - 5000m²</option>
-                      <option value="5000>">Greater Than 5000</option>
+                      {{-- <option value="5000>">Greater Than 5000</option> --}}
                     </select>
                 </div>
             <!-- Section Serviços Extras e datas-->
@@ -189,48 +189,49 @@
                 <!-- <label class="form-label" for="ch-country">Select Extras</label> -->
                 <h2 class="h3 pb-3"><span class="font-weight-light">Select</span> Extras</h2>
             </div>
-            <div class="col-4   ">
+            <div class="col-6 col-sm-4   ">
               <div class="card border border-dark mb-4 extra-item" data-extra="inside-windows"  data-codigo="1" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
-                        <i class="fe-bell"></i>
+                        {{-- <i class="fe-bell"></i> --}}
+                        <img src="/img/book-now/icon-windows.png">
                     </p>
                     <span class=" font-size-md">Inside Windows</span>
                     </div>
                 {{-- </a> --}}
               </div>
             </div>
-            <div class="col-4  ">
+            <div class="col-6 col-sm-4  ">
               <div class="card border border-dark mb-4 extra-item "  data-extra="inside-cabinets"  data-codigo="2" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
-                        <i class="fe-bell"></i>
+                        <img src="/img/book-now/icon-cabinets.png">
                     </p>
                     <span class=" font-size-md">Inside Cabinets</span>
                     </div>
                 {{-- </a> --}}
               </div>
             </div>
-            <div class="col-4  ">
+            <div class="col-6 col-sm-4  ">
               <div class="card border border-dark mb-4 extra-item"  data-extra="baseboard"  data-codigo="3" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                   {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
-                        <i class="fe-bell"></i>
+                        <img src="/img/book-now/icon-baseboard.png">
                     </p>
                     <span class=" font-size-md">Baseboards</span>
                     </div>
                 {{-- </a> --}}
               </div>
             </div>
-            <div class="col-4  ">
+            <div class="col-6 col-sm-4  ">
               <div class="card border border-dark mb-4 extra-item" data-extra="inside-the-fridge"  data-codigo="4" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#" > --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
-                        <i class="fe-bell"></i>
+                        <img src="/img/book-now/icon-fridge.png">
                     </p>
                     <span class=" font-size-md">Inside the Fridge</span>
                     </div>
@@ -249,13 +250,13 @@
                     </a>
                 </div>
             </div> -->
-            <div class="col-4  ">
+            <div class="col-6 col-sm-4   ">
 
               <div class="card border border-dark mb-4  extra-item " data-extra="inside-the-oven"  data-codigo="5" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#" > --}}
                     <div class="card-body text-center ">
                     <p class="card-text font-size-xl">
-                        <i class="fe-bell"></i>
+                        <img src="/img/book-now/icon-oven.png">
                     </p>
                     <span class=" font-size-md">Inside the Oven</span>
                     </div>
@@ -275,12 +276,12 @@
                 </a>
               </div>
             </div> -->
-            <div class="col-4  ">
+            <div class="col-6 col-sm-4  ">
               <div class="card border border-dark  mb-4 extra-item" data-extra="load-of-laudry" data-codigo="6" data-toggle="tooltip" data-placement="top" title="Include in your cleaning service the cleaning of your window">
                 {{-- <a href="#"> --}}
                     <div class="card-body text-center">
                     <p class="card-text font-size-xl">
-                        <i class="fe-bell"></i>
+                        <img src="/img/book-now/icon-laundry.png">
                     </p>
                     <span class=" font-size-md">Load of Laundry</span>
                     </div>
@@ -410,7 +411,7 @@
                   <div class="p-1">
                     <div class="custom-control custom-radio collapsed" data-toggle="collapse" data-target="#zelle">
                       <input class="custom-control-input" type="radio" id="zelle-radio" name="payment_method">
-                      <label class="custom-control-label d-flex h6 mb-0" for="zelle-radio">
+                        <label class="custom-control-label d-flex h6 mb-0" for="zelle-radio">
                           <span>Zelle Pay</span><img class="ml-3" width="20" src="img/icons/zelle-pay.png" alt="zelle pay"/>
                         </label>
                     </div>
@@ -482,6 +483,9 @@
             </div>
           </div>
         </form>
+        <div id="error-cupom" class="alert alert-danger" style="display: none;"  role="alert">
+            Coupon does <strong>not exist</strong> or is <strong>not a term of use</strong>.
+        </div>
       </div>
     </div>
   </div>
@@ -490,19 +494,13 @@
     {{-- <script>paypal.Buttons().render('#paypal-button-container');</script> --}}
 
     <script>
-
-
-
       </script>
       <script>
-
       </script>
 
 @endsection
 @section('script_paypal')
-
     <script
         src="https://www.paypal.com/sdk/js?client-id=AR8hkluSPnK_-QLn7GFh_2CBsKD2fjjIe3mIat9BLz9DzKCs7fW_pWFqVLIZ1ao0QsIeOU0oTItFilfF&currency=BRL"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
     </script>
-
 @endsection
